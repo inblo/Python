@@ -1,3 +1,4 @@
-count1 = int(input('Сколько кусков пицы было:'))
-count2 = int(input('Сколько кусков пицы съедено:'))
-print(f'У Вас осталось', count1 - count2, 'куска(ов)!')
+number1 = int(input('Введите первое число: '))
+number2 = int(input('Введите второе число: '))
+number3 = int(input('Введите третье число: '))
+print(f'The answer is', (number1 + number2) // number3)
