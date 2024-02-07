@@ -1,4 +1,3 @@
 number1 = int(input('Введите первое число: '))
 number2 = int(input('Введите второе число: '))
-number3 = int(input('Введите третье число: '))
-print(f'The answer is', (number1 + number2) // number3)
+print(f'The total is', number1 + number2)

@@ -1,3 +1,3 @@
-account = int(input('Введите общую сумму счета: '))
-count = int(input('Введите сколько человек присутствовало за столом: '))
-print('Каждый участник мероприятия должен заплатить по', account / count, 'рубля(ей)!')
+name = input('Введите Ваше имя: ')
+yearold = int(input('Введите Ваш возраст: '))
+print(name,", next berthday you will be", yearold + 1)

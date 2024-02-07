@@ -1,3 +1,1 @@
-number1 = int(input('Введите первое число: '))
-number2 = int(input('Введите второе число: '))
-print(f'The total is', number1 + number2)
+print(f'What do you call a bear with no teeth?' "\n" "A gummy bear")
