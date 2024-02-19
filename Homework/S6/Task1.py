@@ -9,5 +9,5 @@ min_number = 0
 max_number = 10
 for i in range(len(list_1)):
     if list_1[i] >= min_number and list_1[i] <= max_number:
-        list_1 = list_1.append[i]
+        list_1.append(i)
 print(list_1)
