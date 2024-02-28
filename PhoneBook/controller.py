@@ -12,11 +12,15 @@ def start_app():
             case 2 : 
                 pass
             case 3: 
-                view.show_contacts(model.phone_book)
+                view.show_contacts(model.phone_book, empty_phone_book_error)
             case 4: 
-                pass
+                new_contact = view.input_data(text.input_new_contact) 
+                model.add_new_contact(new_contact)
+                view.show_message(text.new_contact_added_successfull(new_contact[0]))
             case 5: 
-                pass
+                serch_word = view.input_data(text.input_serch_word)
+                result = model.find_contact(serch_word)
+                view.show_contacts(result, text.find_contact_no_result(serch_word))
             case 6: 
                 pass
             case 7: 

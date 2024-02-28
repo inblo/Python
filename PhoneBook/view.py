@@ -13,14 +13,21 @@ def show_main_menu() -> int:
             return int(choice)
         print(text.choice_main_menu_error)
 
-def show_contacts(phone_book: dict[int, [str]]):
+def show_contacts(phone_book: dict[int, [str]], error_message: str):
     if phone_book != 0:
+        print('\n' + '=' * 71)
         for u_id, contact in phone_book.items():
-            print(f'{u_id}. {contact[0]} | {contact[1]} | {contact[2]} ')
+            print(f'{u_id:>3}. {contact[0]:<20} | {contact[1]:<20} | {contact[2]:20} ')
+        print('=' * 71 +'\n')
     else:
-        show_message(text.empty_phone_book_error) 
+        show_message(error_message) 
 
 def show_message(message: str):
     print('\n' + '=' * len(message))
     print(message)
     print('=' * len(message) + '\n')
+
+def input_data(message) -> list[str] | str:
+    if isinstanse(message, str):
+        return input('\n', message)
+    return [input(mes) for mes in message]
